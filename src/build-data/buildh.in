@@ -217,7 +217,7 @@
 * to seed an in-memory RNG.
 */
 #define BOTAN_ENTROPY_DEFAULT_SOURCES \
-   { "rdseed", "hwrng", "getentropy", "system_rng", "system_stats" }
+   { "system_stats", "system_rng", "rdseed", "hwrng", "p9_darn", "getentropy", "dev_random",  "proc_walk" }
 
 /** Multiplier on a block cipher's native parallelism */
 #define BOTAN_BLOCK_CIPHER_PAR_MULT 4
